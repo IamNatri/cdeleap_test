@@ -1,0 +1,31 @@
+###
+PATCH http://127.0.0.1:8000/careers/1/
+accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Software",
+  "content": "adasdasdadadadadada "
+}
+
+
+###
+DELETE http://127.0.0.1:8000/careers/2/
+###
+
+GET http://127.0.0.1:8000/careers/
+accept: application/json
+
+###
+POST http://127.0.0.1:8000/careers/
+accept: application/json
+Content-Type: application/json
+
+{
+    "username": "user2",
+    "title": "Software Engineer",
+    "content": "Develop software"
+
+}
+
+###
